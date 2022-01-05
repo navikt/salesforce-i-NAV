@@ -1,0 +1,56 @@
+name: SF Issue
+description: Still spørsmål knyttet til Salesforce i NAV.
+title: "[SF Issue]: "
+labels: ["Spørsmål", "Bekymring", "Problem"]
+assignees:
+  - leifarnebakkerNAV
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Takk for at du tar deg tid til å gjøre arbeidet med Salesforce i NAV enklere og mer ryddig.
+  - type: textarea
+    id: sf_issue_question
+    attributes:
+      label: Spørsmål, bekymring eller problem?
+      description: Beskriv nærmere?
+      placeholder: ""
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: sf_issue_situasjon
+    attributes:
+      label: Situasjon?
+      description: Beskriv nåsituasjonen nærmere, gjerne med et konkret eksempel.
+      placeholder: ""
+      value: ""
+    validations:
+      required: false
+  - type: textarea
+    id: sf_issue_comp
+    attributes:
+      label: Komplikasjon
+      description: Hva er det som gjør at dette kompliserer ting?
+      placeholder: ""
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: sf_issue_cons
+    attributes:
+      label: Hva slags konsekvenser kan saken føre til?
+      description: Beskriv nærmere?
+      placeholder: ""
+      value: ""
+    validations:
+      required: true
+  - type: textarea
+    id: sf_issue_solution
+    attributes:
+      label: Forslag til løsning
+      description: Beskriv nærmere?
+      placeholder: ""
+      value: ""
+    validations:
+      required: false
