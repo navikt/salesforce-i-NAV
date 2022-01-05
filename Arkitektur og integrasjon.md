@@ -1,23 +1,23 @@
 
 ## Bakgrunn
-<todo>
+todo
   
 ## Overordnet arkitektur
-<todo>
+todo
   
 ## Integrasjonsmønstre
-<todo>
+todo
   
 ## Datamodeller
   ### Genrelle
   ### Spesiell/tilpassede
-<todo>
+todo
   
 ## Håndtering av avgrensede domener (bounded contexts)
-<todo>
+todo
   
 ## FAQ
-<todo>
+todo
   
 ### Er det laget noe anti-corruption-layer mellom Salesforce-domenet og resten?
 Svar: 
