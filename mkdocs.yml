@@ -1,0 +1,14 @@
+site_name: Salesforce i NAV
+nav:
+  - index.md
+  - 'Kom i gang':
+    - Installasjon : installasjon.md
+  - arkitektur.md
+  - eksempler.md
+  - faq.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
