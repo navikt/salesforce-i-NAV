@@ -9,8 +9,8 @@ todo
 todo
   
 ## Datamodeller
-  ### Genrelle
-  ### Spesiell/tilpassede
+### Generelle
+### Spesielle/tilpassede
 todo
   
 ## Håndtering av avgrensede domener (bounded contexts)
