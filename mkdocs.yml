@@ -1,6 +1,6 @@
 site_name: Salesforce i NAV
 repo_url: https://github.com/navikt/salesforce-i-NAV
-edit_uri: edit/master/docs/
+edit_uri: edit/main/docs/
 nav:
   - Hjem:
     - 'Introduksjon': hjem/introduksjon.md
