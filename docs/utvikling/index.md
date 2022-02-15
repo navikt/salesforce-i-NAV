@@ -1,1 +1,1 @@
-# Dette er index-siden.
+## Dette er index-siden.

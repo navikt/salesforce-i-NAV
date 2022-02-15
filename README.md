@@ -11,10 +11,11 @@ Du kan bidra til dokumentasjonen på flere måter, i hovedsak følgende tre:
 3. Be om å bli en del av dokumentasjons-teamet slik at du kan publisere dokumentasjon direkte. Hvis du ønsker dette kan du sende e-post til leif.arne.bakker@nav.no.
 
 ## For deg som ønsker å publisere direkte
+Hvis du synes det er ok å bruke GitHub sin web-editor så er det raskeste vei til mål. Når du pusher endringene så genereres dokumentasjonen via GitHub Actions automagisk. Hvis du ønsker litt mer kontroll på verktøy og skriveprosess så må du lese videre.
 
-### Innstallasjon
+### Installasjon av verktøy du trenger
 
-I tillegg til git trenger du *python* og *pip* slik at du kan innstallere *MkDocs* og *Material for MkDocs*.
+I tillegg til git trenger du *python* og *pip* slik at du kan installere *MkDocs* og *Material for MkDocs*.
 
 Kjør kommandoene: 
 
@@ -32,19 +33,16 @@ Du kan lese mer om *MkDocs* [her](https://www.mkdocs.org/) og theme-et *Material
 3. Dokumentasjonsfilene ligger i *docs*-katalogen og er i markdownformat. Du kan lese mer om markdown [her](https://www.markdownguide.org/)
 
 ### Publisere endringene dine
-Å publisere er en rakett i to trinn. Dette bør endres i fremtiden og vi bør se på muligheter for å benytte [GitHub Actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/) i stedet.
 
-#### 1. Push endringer i dokumentasjonsfilene
 Kjør kommandoene:
 `git add --all`
 `git commit - m 'commit message'`
 `git push`
 
-Endringene pushes nå til *main branch* på remote repos-et. 
+Endringene pushes nå til *main branch* på remote repos-et og deretter kjøres en GitHub Action som generer html-dokumentasjonen. Det kan ta noen minutter før du ser endringene på siden etter at du har publisert. 
 
-#### 2. Generere html-dokumentasjonen
-Kjør kommandoen:
+Kommandoen som faktisk kjøres er:
 
 `mkdocs gh-deploy --force`
 
-Dette generer html-dokumentasjonen på en egen *branch* som heter *gh-pages*. Vi har satt opp GitHub-pages til å lete etter html-sider på denne branchen, og du er nå ferdig og dokumentene er publisert. Du kan se dem [her](https://navikt.github.io/salesforce-i-NAV/)
+Denne generer html-dokumentasjonen på en egen *branch* som heter *gh-pages*. Vi har satt opp GitHub-pages til å lete etter html-sider på denne branchen og du kan som nevnt se dem [her](https://navikt.github.io/salesforce-i-NAV/)
