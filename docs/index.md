@@ -1,1 +1,2 @@
-# Dette er forsiden
+# Introduksjon
+Denne dokumentasjonssiden har som mål gi god informasjon om bruk av Salesforce i NAV. Vi forsøker å favne bredt og inkluderer alt fra historikk og overordnet startegi til hvordan å benytte Saleforce-plattformen til utvikling.
