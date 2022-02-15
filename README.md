@@ -32,7 +32,7 @@ Du kan lese mer om *MkDocs* [her](https://www.mkdocs.org/) og theme-et *Material
 3. Dokumentasjonsfilene ligger i *docs*-katalogen og er i markdownformat. Du kan lese mer om markdown [her](https://www.markdownguide.org/)
 
 ### Publisere endringene dine
-Å publisere er en rakett i to trinn:
+Å publisere er en rakett i to trinn. Dette bør endres i fremtiden og vi bør se på muligheter for å benytte [GitHub Actions](https://squidfunk.github.io/mkdocs-material/publishing-your-site/) i stedet.
 
 #### 1. Push endringer i dokumentasjonsfilene
 Kjør kommandoene:
