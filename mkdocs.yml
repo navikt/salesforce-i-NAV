@@ -1,9 +1,11 @@
 site_name: Salesforce i NAV
 repo_url: https://github.com/navikt/salesforce-i-NAV
 edit_uri: edit/main/docs/
-nav:
-  - Hjem:
-    - index.md
+nav: 
+  - Historikk:
+    - 'Anskaffelsen': historikk/anskaffelse.md 
+  - FAQ:
+    - 'FAQ': faq.md
   - Arkitektur:
     - 'Konseptuell arkitektur': arkitektur/introduksjon.md
   - Utvikling:
@@ -13,11 +15,8 @@ nav:
       - 'Ny utvikler': utvikling/ny-utvikler.md
     - DevOps: utvikling/devops.md
     - Felleskomponenter: utvikling/felleskomponenter.md
-  
   - Eksempler:
     - 'Introduksjon': eksempler/introduksjon.md 
-  - Historikk:
-    - 'Innledning': historikk/innledning.md 
   - Ressurser:
     - 'Ressurser': ressurser/introduksjon.md 
 
