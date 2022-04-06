@@ -1,48 +1,92 @@
 site_name: Salesforce i NAV
 repo_url: https://github.com/navikt/salesforce-i-NAV
 edit_uri: edit/main/docs/
-nav: 
-  - Historikk:
-    - 'Anskaffelsen': historikk/anskaffelse.md 
-  - FAQ:
-    - 'FAQ': faq.md
-  - Arkitektur:
-    - 'Konseptuell arkitektur': arkitektur/introduksjon.md
-  - Utvikling:
-    - utvikling/index.md
-    - Kom i gang:
-      - 'Oppsett og konfig': utvikling/setup.md
-      - 'Ny utvikler': utvikling/ny-utvikler.md
-    - DevOps: utvikling/devops.md
-    - Felleskomponenter: utvikling/felleskomponenter.md
-  - Eksempler:
-    - 'Introduksjon': eksempler/introduksjon.md 
-  - Ressurser:
-    - 'Ressurser': ressurser/introduksjon.md 
-
 theme:
   name: material
+  language: 'en'
+  favicon: assets/logo.png
+  custom_dir: custom_theme_overrides
+  palette:
+    scheme: slate
+    primary: teal
+    accent: cyan
   features:
+    - navigation.instant
     - navigation.tabs
-    - navigation.indexes
-    - navigation.expand
-  icon:
-    repo: fontawesome/brands/github
-  palette: 
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
-  markdown_extensions:
-    - def_list
-    - attr_list
-    - md_in_html
-    - pymdownx.highlight:
-        anchor_linenums: true
-    
-  
-  
+extra:
+  search:
+    language: 'en'
+extra_css:
+  - material_theme_stylesheet_overrides/sf.css
+plugins:
+  - search
+markdown_extensions:
+  - toc:
+      permalink: True
+  - admonition
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.highlight:
+      css_class: codehilite
+      linenums_style: pymdownx-inline
+  - pymdownx.tasklist
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+  - SF Development:
+    - Introduction to SF: README.md
+    - Getting started:
+      - Access from laptop: getting_started/access.md
+      - Teams: getting_started/teams.md
+      - Your first Salesforce application: getting_started/application.md
+    - Development:
+      - Full example: development/example.md
+      - Reference: development/application.md
+      - Access policy: development/access-policy.md
+      - Automatic scaling: development/automatic-scaling.md
+      - Config: development/config-reloading.md
+      - Good practices: development/good-practices.md
+      - Debugging: development/debugging.md
+    - Deploy:
+      - SF deploy: deploy/intro.md
+      - Changing teams: deploy/change-team.md
+      - Delete app: deploy/delete-app.md
+      - Troubleshooting: deploy/troubleshooting.md
+      - Manual deploy: deploy/manual.md
+    - Monitoring:
+      - Alerts:
+        - Alerts Overview: monitoring/alerts/readme.md
+        - Full example: monitoring/alerts/example.md
+        - Recommended: monitoring/alerts/recommended_alerts.md
+        - Reference: monitoring/alerts/reference.md
+      - Logs:
+        - Logs Overview: monitoring/logs/readme.md
+        - Examples: monitoring/logs/examples.md
+      - Metrics: monitoring/metrics.md
+      - Tracing: monitoring/tracing.md
+    - Integration:
+      - Kafka: 
+        - Introduction: integration/kafka/intro.md
+        - Getting started: integration/kafka/getting_started.md
+    - Security:
+      - Auth:
+        - Introduction: security/auth/intro.md
+        - Getting started: security/auth/getting_started.md
+    - Addons:
+      - Addon test: addons/addon_test.md
+    - Support: support.md
+  - SF Design:
+    - Introduction to design with Salesforce: README_DESIGN.md
+  - SF Business:
+    - Business thinking with Salesforce: README_BUSINESS.md
+  - FAQ:
+    - Frequntly asked questions: faq.md
