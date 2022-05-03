@@ -1,7 +1,8 @@
 # FAQ
 todo
   
-### Er det laget noe anti-corruption-layer mellom Salesforce-domenet og resten?**
+### Er det laget noe anti-corruption-layer mellom Salesforce-domenet og resten?
+
 Svar: kljsfdjlsdjf jsdl fj sdjflsjkdflj sdlfjklsdjflksdjf 
 
 ### Hvordan unngår man at Salesforce blir en flaskehals ved endringer i datamodellene som produsereres/konsumeres (dette spørsmålet må spesifiseres mer)
