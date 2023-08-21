@@ -11,6 +11,8 @@ theme:
     primary: light blue
     accent: light blue
   features:
+    - content.code.copy
+    - content.code.annotate
     - navigation.instant
     - navigation.tabs
 extra:
