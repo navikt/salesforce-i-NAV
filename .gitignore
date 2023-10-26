@@ -1,1 +1,7 @@
 **/site
+
+# misc
+.*.sw?
+*.vim
+TAGS
+tags
