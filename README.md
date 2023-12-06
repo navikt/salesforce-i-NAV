@@ -8,7 +8,7 @@ Du kan bidra til dokumentasjonen på flere måter, i hovedsak følgende tre:
 
 1. Legg inn en --issue-- hvor du enten beskriver hva du vil ha dokumentert eller legger ved dokumentasjon du selv har skrevet. Dette kan du gjøre her: https://github.com/navikt/salesforce-i-NAV/issues/new/choose
 2. Klone reposet og lage din egen Pull Request som vi kan flette inn etter vurdering.
-3. Be om å bli en del av dokumentasjons-teamet slik at du kan publisere dokumentasjon direkte. Hvis du ønsker dette kan du sende e-post til leif.arne.bakker@nav.no.
+3. Be om å bli en del av dokumentasjons-teamet slik at du kan publisere dokumentasjon direkte. Hvis du ønsker dette kontakt platformteamet på Slack.
 
 ## For deg som ønsker å publisere direkte
 Hvis du synes det er ok å bruke GitHub sin web-editor så er det raskeste vei til mål. Når du pusher endringene så genereres dokumentasjonen via GitHub Actions automagisk. Hvis du ønsker litt mer kontroll på verktøy og skriveprosess så må du lese videre.
