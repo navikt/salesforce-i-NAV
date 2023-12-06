@@ -80,7 +80,7 @@ Before starting with this setup you should spend some time to familiarise yourse
 1. Open NAV Programvaresenter
 2. Install "Windows Subsytem for Linux (WSL) - Vil restarte!"
 3. Update WSL
-   ```
+   ```powershell
    wsl --update
    ```
 4. Install your preferred Linux distro
@@ -128,3 +128,29 @@ Before starting with this setup you should spend some time to familiarise yourse
     2. Velg "Remote [WSL:Ubuntu]" (eller den versjonen du har lagt inn)
     3. Extensions => Salesforce Apex Configuration
     4. Sett Java Home til => `/usr/lib/jvm/temurin-17-jdk-amd64 (dersom du har et annet oppsett en det som er beskrevet her så legg inn den pathen du hadde.`
+
+
+#### Install and setup GPG for WSL
+The repositories requires signed commits, here is a description of how to set this up with the WSL setup
+In Windows install GPG with Scoop
+```powershell
+scoop install gpg
+```
+Then switch to your WSL installation and to GPG
+```
+sudo apt-get install gpg gnupg gpg-agent
+```
+Edit or create the config file `~/.gnupg/gpg-agent.conf` with the content below. IMPORTANT: set `pinentry-program` to point to your Windows installation of pinentry-basic.exe, [USER] must be set to your user.
+```
+default-cache-ttl 34560000
+max-cache-ttl 34560000
+pinentry-program "/mnt/c/Users/[USER]/scoop/apps/gpg/current/bin/pinentry-basic.exe"
+```
+The `pinentry-program` configuration explicitly tells GPG to use the pin entry app installed in Windows. 
+
+Restart gpg
+```
+gpgconf --kill gpg-agent
+```
+
+Proceed to generate GPG key pairs and add the key to your GitHub user.
