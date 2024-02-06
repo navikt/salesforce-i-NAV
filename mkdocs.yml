@@ -51,6 +51,8 @@ nav:
       - Teams: getting_started/teams.md
       - Your first Salesforce application: getting_started/application.md
     - Development:
+      - Introduction: development/intro.md
+      - Naming conventions: development/naming_conventions.md
       - Full example: development/example.md
       - Reference: development/application.md
       - Access policy: development/access-policy.md
