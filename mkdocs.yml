@@ -5,7 +5,12 @@ theme:
   name: material
   language: 'en'
   favicon: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github-alt
+    edit: material/pencil 
+    view: material/eye
   custom_dir: custom_theme_overrides
+  direction: ltr
   palette:
     scheme: slate
     primary: light blue
@@ -13,17 +18,19 @@ theme:
   features:
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
     - navigation.instant
     - navigation.tabs
+    - navigation.path
 extra:
   search:
     language: 'en'
   alternate:
     - name: English
-      link: /en/ 
+      link: /salesforce-i-NAV/
       lang: en
     - name: Norwegian
-      link: /nb/
+      link: /salesforce-i-NAV/nb/
       lang: nb
 extra_css:
   - material_theme_stylesheet_overrides/sf.css
