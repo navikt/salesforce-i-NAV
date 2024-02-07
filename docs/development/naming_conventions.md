@@ -6,8 +6,6 @@ Naming Conventions for Customization and Configuration in Salesforce is an impor
 
 Remember, adhering to these naming conventions enhances readability and facilitates efficient management of our Salesforce environment.
 
-Certainly! Here's a rewritten version of the information about different casings:
-
 ## 1. Language
 **Configurable metadata** (such as Custom Objects, Custom Fields, Process Builder, Flows, Apex, etc.) is created and named in the English language. This applies to both labels, API names, and help text. For metadata where labels are visible to the user, these must be translated to Norwegian using the **[Translation Workbench](https://help.salesforce.com/s/articleView?id=sf.workbench_overview.htm&type=5)**. There are two main reasons for this approach:
 
@@ -117,8 +115,8 @@ The following are examples shows valid naming conventions for Object Label, Obje
 
 | Object Label | Object Plural Label | Object Name (API) |
 |:-------------|:-------------|:-------------|
-Shipping Invoice | Shipping Invoices | ShippingInvoice__c
-Inclusion Opportunity | Inclusion Opportunities | InclusionOpportunity__c
+Shipping Invoice | Shipping Invoices | ```ShippingInvoice__c```
+Inclusion Opportunity | Inclusion Opportunities | ```InclusionOpportunity__c```
 
 ____
 
