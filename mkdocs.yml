@@ -18,6 +18,13 @@ theme:
 extra:
   search:
     language: 'en'
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Norwegian
+      link: /nb/
+      lang: nb
 extra_css:
   - material_theme_stylesheet_overrides/sf.css
 plugins:
@@ -92,5 +99,5 @@ nav:
 #    - Introduction to design with Salesforce: README_DESIGN.md
 #  - SF Business:
 #    - Business thinking with Salesforce: README_BUSINESS.md
-  - FAQ:
-    - Frequntly asked questions: faq.md
+#  - FAQ:
+#    - Frequntly asked questions: faq.md
